@@ -8,6 +8,14 @@ This is the first post in a series to set up an AngularJS UI, backed up by a Sai
 
 ### Setting up a Linux environment ###
 
+Following the example in Sails website will get you up and running. These are the steps:
+
+	sudo apt-get install python-software-properties python g++ make
+	sudo add-apt-repository ppa:chris-lea/node.js
+	sudo apt-get update
+	sudo apt-get upgrade	# Optional
+	sudo apt-get install nodejs
+
 ### Setting up a Windows environment ###
 
 1. First of all, node.js needs to be installed. To do so, download a msi package from [the node.js](http://nodejs.org/download/) website.
