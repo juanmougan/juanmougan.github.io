@@ -2,14 +2,14 @@
 layout: post
 title:  "Why I chose Rails for my web application"
 date:   2015-03-02 16:13:00
-categories: Development Ruby on Rails Sails.js MVC
+categories: Development Ruby on Rails Sails.js MVC Opinion
 ---
-On a [previous post](http://juanmougan.github.io/jekyll/update/2015/02/14/setting-up-angular-sails.html), I wrote about how to get up and running with a Sails.js project. The motivation for that particular arcticle was simple: I was exploring checking some frameworks to do a smallish web application, and Sails had three interesting features:
+On a [previous post](http://juanmougan.github.io/jekyll/update/2015/02/14/setting-up-angular-sails.html), I wrote about how to get up and running with a Sails.js project. The motivation for that particular arcticle was simple: I was exploring checking some frameworks to do a [smallish web application](https://github.com/juanmougan/backend/), and Sails had three interesting features:
 - It was heavily inspired by Ruby on Rails, which I had breafily used before
 - It was a JavaScript based framework, and it's a language I had (and I still have) to learn a lot better
 - And also, another cool feature was it was really quick and easy to set up a REST API, which was one of my project's requirement. You can bootstrap a working API _really_ fast, in a painless way.
 
-However, one of the main requirements I had, was to parse a CSV file having un-normalized data for Students, into  normalized object structure to be used by the system. To do so, I just started typing some Ruby code... because I love Ruby as much as I'm unfamiliar with JS. Eventually, the full parser "prototype" was ready... and it was the time to make a decision. Should I stick with Sails (which is based on node.js), and spawn a Ruby process to parse my CSV? Or should I rewrite my (at that point, really basic) APIs in Ruby?
+However, one of the main requirements I had, was to parse a CSV file having un-normalized data for Students, into  normalized object structure to be used by the system. To do so, I just started typing some Ruby code... because I love Ruby as much as I'm unfamiliar with JS. Eventually, the full [parser "prototype"](https://github.com/juanmougan/parseCsv) was ready... and it was the time to make a decision. Should I [stick with Sails](https://github.com/juanmougan/backendNotificaciones/) (which is based on node.js), and spawn a Ruby process to parse my CSV? Or should I rewrite my (at that point, really basic) APIs in Ruby?
 
 I decided to go with a full Ruby solution, because I believed it would help manteniance and configuration, and I chose Rails because I had some experience using it. At least, I didn't have to scaffold everything, I knew how to make by hand a full controller, with its views and routes. The `CsvImporterController` was written that way, evntually I ended up using scaffold in some other parts, but it was a matter of lazyness ;)
 
