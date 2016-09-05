@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Why I chose Rails for my web application"
-date:   2015-03-02 16:13:00
+date:   2016-02-17 15:00:00
 categories: Development Ruby on Rails Sails.js MVC Opinion
 ---
 On a [previous post](http://juanmougan.github.io/jekyll/update/2015/02/14/setting-up-angular-sails.html), I wrote about how to get up and running with a Sails.js project. The motivation for that particular arcticle was simple: I was exploring checking some frameworks to do a [smallish web application](https://github.com/juanmougan/backend/), and Sails had three interesting features:
