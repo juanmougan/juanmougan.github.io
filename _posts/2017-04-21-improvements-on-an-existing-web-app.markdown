@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Getting started with Backup gem"
-date:   2016-09-05 16:15:00
+title:  "Improvements on an existing web app"
+date:   2017-04-21 23:45:00
 categories: Development
 ---
 Today I was wondering about one of the parts of my college's final assignment:
