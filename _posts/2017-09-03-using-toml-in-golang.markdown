@@ -2,7 +2,7 @@
 layout: post
 title:  "Parsing a TOML file in Go"
 date:   2017-09-03 23:00:00
-categories: Development Go
+categories: Go
 ---
 I wanted to load configuration data in a Go application, using something equivalent to Java's property files. 
 After a little bit of googling, I came across [this StackOverflow's answer](https://stackoverflow.com/a/16491396/3923525), which suggests using [TOML](https://github.com/toml-lang/toml) for managing configuration.  
