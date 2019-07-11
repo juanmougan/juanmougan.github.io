@@ -9,4 +9,19 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+  <script type="text/javascript" defer>
+    //<![CDATA[
+    const url = 'https://my-json-server.typicode.com/juanmougan/projects/ongoing/1';
+    fetch(url)
+    .then(function(data) {
+      data.json().then(
+        project => document.getElementById("current-top-project").textContent = project.description
+      );
+    })
+    .catch(function(error) {
+      console.log(error)
+    });
+    //]]>
+  </script>
 </head>
