@@ -20,6 +20,7 @@
           const description = repos[0].description;
           const htmlUrl = repos[0].html_url;
           let link = document.getElementById("current-top-project");
+          link.textContent = description;
           link.title = description;
           link.href = htmlUrl;
         }
