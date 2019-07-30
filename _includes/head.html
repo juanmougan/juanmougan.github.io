@@ -12,11 +12,17 @@
 
   <script type="text/javascript" defer>
     //<![CDATA[
-    const url = 'https://my-json-server.typicode.com/juanmougan/projects/ongoing/1';
+    const url = 'https://api.github.com/users/juanmougan/repos?sort=updated';
     fetch(url)
-    .then(function(data) {
+    .then(data => {
       data.json().then(
-        project => document.getElementById("current-top-project").textContent = project.description
+        repos => {
+          const description = repos[0].description;
+          const htmlUrl = repos[0].html_url;
+          let link = document.getElementById("current-top-project");
+          link.title = description;
+          link.href = htmlUrl;
+        }
       );
     })
     .catch(function(error) {
