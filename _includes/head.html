@@ -21,8 +21,8 @@
           const htmlUrl = repos[0].html_url;
           const language = repos[0].language;
           let link = document.getElementById("current-top-project");
-          link.textContent = description + ' in ' + language;
-          link.title = description + ' in ' + language;
+          link.textContent = `${description} (in ${language}`;
+          link.title = link.textContent;
           link.href = htmlUrl;
         }
       );
