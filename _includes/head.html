@@ -19,9 +19,10 @@
         repos => {
           const description = repos[0].description;
           const htmlUrl = repos[0].html_url;
+          const language = repos[0].language;
           let link = document.getElementById("current-top-project");
-          link.textContent = description;
-          link.title = description;
+          link.textContent = description + ' in ' + language;
+          link.title = description + ' in ' + language;
           link.href = htmlUrl;
         }
       );
