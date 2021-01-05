@@ -438,3 +438,4 @@ This was a bunch of code 💣! Hopefully, you followed along, and got your own w
 I'm not a great fan of this Angular and Rails structure, for several reasons. For starters, it mixes up the folder structure of both frameworks, and it feels as if you're neglecting some of Rails' features (like the routing, for example).
 
 Anyway, it was a great starting point for a fullstack app, and it works properly.
+You can find the code for this example [here](https://github.com/juanmougan/kombiz).
