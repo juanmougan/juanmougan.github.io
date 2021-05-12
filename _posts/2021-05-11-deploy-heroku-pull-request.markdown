@@ -2,7 +2,7 @@
 layout: post
 title: "Deploying to Heroku on a pull request using GitHub Actions"
 date: 2021-05-11 23:45:00
-categories: GitHub, Heroku
+categories: GitHub Heroku
 ---
 
 I came across this great [GitHub Action](https://github.com/marketplace/actions/deploy-to-heroku) to deploy to Heroku by
